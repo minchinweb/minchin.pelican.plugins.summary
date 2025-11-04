@@ -14,4 +14,3 @@ releaser:
       - setuptools
       - wheel
     pypi:
-      # - python-dateutil

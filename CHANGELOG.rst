@@ -11,7 +11,8 @@ This Changelog is for ``minchin.pelican.plugins.summary``.
   is a required dependency.
 - :bug:`7 major` get unittests running again.
 - :bug:`5 major` require Pelican 4.10 or later. Keeps internal link indicators
-  (like ``{filename}``) from leaking into summaries. C.f. `Pelican Issue #3265`_.
+  (like ``{filename}``) from leaking into summaries. c.f. `Pelican Issue
+  #3265`_. c.f. `Pull Request #4`_.
 - :support:`-` swap from ``setup.py`` to ``pyproject.toml``
 - :feature:`-` add (basic) test site.
 - :bug:`- major` logging now has the right prefix.
@@ -30,6 +31,8 @@ This Changelog is for ``minchin.pelican.plugins.summary``.
 - :support:`-` extract existing code from
   https://github.com/getpelican/pelican-plugins
 
+
+.. _Pull Request #4: https://github.com/minchinweb/minchin.pelican.plugins.summary/pull/4
 
 .. _AutoLoader Issue #4: https://github.com/minchinweb/minchin.pelican.plugins.autoloader/issues/4
 .. _Pelican Issue #3265: https://github.com/getpelican/pelican/issues/3265
