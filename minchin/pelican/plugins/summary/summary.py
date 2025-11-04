@@ -9,7 +9,8 @@ body of your articles.
 import logging
 import re
 
-import semantic_version
+from packaging.specifiers import SpecifierSet
+from packaging.version import Version
 
 from pelican import __version__ as pelican_version
 from pelican.generators import ArticlesGenerator, PagesGenerator
@@ -30,15 +31,20 @@ def _pelican_summary_as_metadata():
     in preparation for the release of Pelican 4. (Actual commit is 06fd9b dated
     2018-02-09).
 
+    Note: Pelican 4.10 is required in general, so it may make sense to drop
+    this function entirely.
+
+    Todo: Add tests of this function (or drop it?).
+
     Return:
         bool: if summary is stored in the metadata table.
     """
 
-    pelican_semver = semantic_version.Version(pelican_version)
-    if pelican_semver.major >= 4:
-        return True
-    else:
-        return False
+
+    pelican_parced_version = Version(pelican_version)
+    needed_spec = SpecifierSet(">= 4.0.0")
+
+    return pelican_parced_version in needed_spec
 
 
 def initialized(pelican_instance):
