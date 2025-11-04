@@ -3,6 +3,7 @@ Summary Changelog
 
 This Changelog is for ``minchin.pelican.plugins.summary``.
 
+- :release:`1.3.1 <2025-11-03>`
 - :bug:`-` don't break on valid PEP440 versions (e.g. ``4.11.0.post0``). See
   `AutoLoader Issue #4`_.
 - :release:`1.3.0 <2024-09-30>`

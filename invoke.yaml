@@ -13,6 +13,5 @@ releaser:
       - pelican
       - setuptools
       - wheel
-      - semantic-version
     pypi:
-      - python-dateutil
+      # - python-dateutil
